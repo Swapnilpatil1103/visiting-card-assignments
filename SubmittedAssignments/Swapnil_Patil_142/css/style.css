@@ -1,0 +1,256 @@
+@font-face {
+    font-family: myfont1;
+    src: url(../fonts/cursive.ttf);
+}
+@font-face {
+    font-family: title;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: subtitle;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 300mm;
+    width: 300mm;
+    margin-left: 30mm;
+    margin-right: 50mm;
+    margin-top: 10mm;
+    overflow: hidden;
+
+}
+
+body .card-background {
+    height: 205mm;
+    width: 205mm;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card-background .front-page {
+    height: 70mm;
+    width: 120mm;
+    background-color: #FFFFFF;
+
+    overflow: hidden;
+    box-shadow: 0mm 5mm 5mm rgba(0, 0, 0, 0.3); 
+     
+    
+  
+}
+
+.card-background .back-page {
+    height: 70mm;
+    width: 120mm;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0mm 5mm 5mm rgba(0, 0, 0, 0.3); 
+}
+
+
+.card-background .front-page .rectcyan {
+    height: 50mm;
+    width: 28mm;
+    border: none;
+    background-color: #18A1D7;
+    background-image: linear-gradient(to top, #1399D4, #30BBE2);
+    transform: skewX(20deg);
+    position: relative;
+    top: 20mm;
+    right: 10mm;
+}
+
+.card-background .front-page .rectpurple {
+    height: 50mm;
+    width: 20mm;
+    border: none;
+    background-color: purple;
+    background-image: linear-gradient(to bottom, #A367BF, #DA76BD);
+    transform: skewX(-20deg);
+    position: relative;
+    bottom: 50mm;
+    right: 11mm;
+
+
+}
+
+.card-background .front-page .rectcyan2 {
+    height: 15mm;
+    width: 4mm;
+    border: none;
+    background-color: #18A1D7;
+    background-image: linear-gradient(to bottom, #1399D4, #37C2E9);
+    transform: skewX(20deg);
+    position: relative;
+    left: 57mm;
+    bottom: 80mm;
+}
+
+.card-background .front-page .rectpurple2 {
+    height: 20mm;
+    width: 4mm;
+    border: none;
+    background-color: purple;
+    background-image: linear-gradient(to bottom, #E474BE, #AA67C2);
+    transform: skewX(-20deg);
+    position: relative;
+    left: 63.3mm;
+    bottom: 100mm;
+
+}
+
+.card-background .front-page #title {
+    color: #23262E;
+    font-family: title;
+    font-weight: bold;
+    font-size: 6mm;
+
+    position: relative;
+    left: 35mm;
+    bottom: 102mm;
+}
+
+.card-background .front-page #subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #54565b;
+    position: relative;
+    left: 44mm;
+    bottom: 115mm;
+
+
+}
+
+/* back card page content*/
+
+.card-background .back-page .rectbtmcyan {
+    height: 80mm;
+    width: 48mm;
+    border: none;
+    background-color: #18A1D7;
+    background-image: linear-gradient(to bottom, #189fda, #30BBE2);
+    transform: skewX(30deg);
+    position: relative;
+    left: 112mm;
+}
+
+.card-background .back-page .rectbtmcyan .qrlogo {
+    height: 20mm;
+    width: 20mm;
+    position: relative;
+    transform: skewX(-30deg);
+    top: 10mm;
+    right: 11mm;
+}
+
+.card-background .back-page .rectbtmpurple {
+    height: 80mm;
+    width: 48mm;
+    border: none;
+    background-color: #A367BF;
+    background-image: linear-gradient(to bottom, #DD7CC2, #A96DC4);
+    transform: skewX(-20deg);
+    position: relative;
+    bottom: 60mm;
+    left: 105.5mm;
+}
+
+.back-content{
+    text-align: left;
+}
+.card-background .back-page #name {
+    position: relative;
+    bottom: 158mm;
+    left: 15mm;
+    font-family: title;
+}
+
+.card-background .back-page #subname {
+    font-size: 4.5mm;
+    position: relative;
+    bottom: 3mm;
+    color: #000000;
+    font-family: subtitle;
+
+}
+
+.card-background .back-page #hr {
+    background-color: black;
+    width: 20mm;
+    height: 0.5mm;
+    border-radius: 2mm;
+    position: relative;
+    right: 34.5mm;
+    bottom: 172mm;
+
+}
+
+
+.call {
+    height: 10mm;
+    width: 10mm;
+    position: relative;
+    bottom: 170mm;
+    left: 13mm;
+}
+
+.number {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5mm;
+    bottom: 180mm;
+    left: 24.5mm;
+
+}
+
+.number2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5mm;
+    bottom: 185mm;
+    left: 24.5mm;
+
+}
+
+.mail {
+    height: 6mm;
+    width: 6mm;
+    position: relative;
+    bottom: 180.5mm;
+    left: 15mm;
+}
+
+.mail-text {
+    font-size: 3.5mm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    bottom: 192mm;
+    left: 24.5mm;
+}
+
+.location {
+    height: 10mm;
+    width: 10mm;
+    position: relative;
+    bottom: 193mm;
+    left: 12.7mm;
+}
+
+.location-text {
+    position: relative;
+    font-size: 3.5mm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    bottom: 206.5mm;
+    left: 24.5mm;
+}
