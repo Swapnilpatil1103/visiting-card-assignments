@@ -25,7 +25,7 @@ body {
 
 }
 
-body .card-background {
+body .card-wrapper {
     height: 205mm;
     width: 205mm;
     background-color: #E6E6E6;
@@ -36,28 +36,30 @@ body .card-background {
 
 }
 
-.card-background .front-page {
+.card-wrapper .card1-background {
     height: 70mm;
     width: 120mm;
     background-color: #FFFFFF;
 
     overflow: hidden;
     box-shadow: 0mm 5mm 5mm rgba(0, 0, 0, 0.3); 
-     
-    
-  
+    position: relative;
+    top: 20mm; 
+
 }
 
-.card-background .back-page {
+.card-wrapper .card2-background {
     height: 70mm;
     width: 120mm;
     background-color: #FFFFFF;
     overflow: hidden;
-    box-shadow: 0mm 5mm 5mm rgba(0, 0, 0, 0.3); 
+    box-shadow: 0mm 5mm 5mm rgba(0, 0, 0, 0.3);
+    position: relative; 
+    bottom: 10mm;
 }
 
 
-.card-background .front-page .rectcyan {
+.card-wrapper .card1-background .rectcyan {
     height: 50mm;
     width: 28mm;
     border: none;
@@ -69,7 +71,7 @@ body .card-background {
     right: 10mm;
 }
 
-.card-background .front-page .rectpurple {
+.card-wrapper .card1-background .rectpurple {
     height: 50mm;
     width: 20mm;
     border: none;
@@ -83,7 +85,7 @@ body .card-background {
 
 }
 
-.card-background .front-page .rectcyan2 {
+.card-wrapper .card1-background .rectcyan2 {
     height: 15mm;
     width: 4mm;
     border: none;
@@ -95,7 +97,7 @@ body .card-background {
     bottom: 80mm;
 }
 
-.card-background .front-page .rectpurple2 {
+.card-wrapper .card1-background .rectpurple2 {
     height: 20mm;
     width: 4mm;
     border: none;
@@ -108,31 +110,28 @@ body .card-background {
 
 }
 
-.card-background .front-page #title {
+.card-wrapper #title {
     color: #23262E;
     font-family: title;
     font-weight: bold;
     font-size: 6mm;
-
+    text-align: center;
     position: relative;
-    left: 35mm;
-    bottom: 102mm;
+    bottom: 25mm;
 }
 
-.card-background .front-page #subtitle {
+.card-wrapper #subtitle {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     color: #54565b;
     position: relative;
-    left: 44mm;
-    bottom: 115mm;
-
-
+    text-align: center;
+    bottom: 35mm;
 }
 
 /* back card page content*/
 
-.card-background .back-page .rectbtmcyan {
+.card-wrapper .card2-background .rectbtmcyan {
     height: 80mm;
     width: 48mm;
     border: none;
@@ -143,7 +142,7 @@ body .card-background {
     left: 112mm;
 }
 
-.card-background .back-page .rectbtmcyan .qrlogo {
+.card-wrapper .card2-background .rectbtmcyan .qrlogo {
     height: 20mm;
     width: 20mm;
     position: relative;
@@ -152,7 +151,7 @@ body .card-background {
     right: 11mm;
 }
 
-.card-background .back-page .rectbtmpurple {
+.card-wrapper .card2-background .rectbtmpurple {
     height: 80mm;
     width: 48mm;
     border: none;
@@ -164,17 +163,17 @@ body .card-background {
     left: 105.5mm;
 }
 
-.back-content{
+.card2-content{
     text-align: left;
 }
-.card-background .back-page #name {
+.card-wrapper .card2-background #name {
     position: relative;
     bottom: 158mm;
     left: 15mm;
     font-family: title;
 }
 
-.card-background .back-page #subname {
+.card-wrapper .card2-background #subname {
     font-size: 4.5mm;
     position: relative;
     bottom: 3mm;
@@ -183,7 +182,7 @@ body .card-background {
 
 }
 
-.card-background .back-page #hr {
+.card-wrapper .card2-background #hr {
     background-color: black;
     width: 20mm;
     height: 0.5mm;
